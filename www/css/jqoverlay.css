@@ -1,0 +1,61 @@
+/* JQuery Overlay */
+/* black version of the overlay. simply uses a different background image */
+div.apple_overlay.black {
+        background-image:url(../images/transparent.png);		
+        text-align: center;
+        color:#fff;
+}
+
+div.apple_overlay h2 {
+        margin:10px 0 -9px 0;
+        font-weight:bold;
+        font-size:14px;
+}
+
+div.black h2 {
+        color:#ECCB3E;
+}
+
+#triggers {
+        margin-top:10px;
+        text-align:center;
+}
+
+#triggers img {
+        background-color:#fff;
+        padding:2px;
+        margin:2px 5px;
+        cursor:pointer;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+}
+/* the overlayed element */
+.apple_overlay {
+	
+	/* initially overlay is hidden */
+	display:none;
+	
+	/* growing background image */
+	background-image:url(../images/overlaywhite.png);
+	
+	/* 
+		width after the growing animation finishes
+		height is automatically calculated
+	*/
+	width:850px;		
+	
+	/* some padding to layout nested elements nicely  */
+	padding:45px;
+
+	/* a little styling */	
+	font-size:11px;
+}
+
+/* default close button positioned on upper right corner */
+.apple_overlay .close {
+	background-image:url(../images/overlayclose.png);
+	position:absolute; right:15px; top:15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}

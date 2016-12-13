@@ -1,0 +1,42 @@
+/* Comments */
+#commentswrapper
+{
+    width:970px;
+    margin:0 auto;
+    padding:0px;
+    background-color: #FFFFFF;
+    height: auto;
+}
+#commentscontainer
+{
+    width:600px;
+    border:3px solid #9B8174;
+    margin:0 auto;
+    padding:0px;
+    background-color: #FFFFFF;
+    height: auto;
+}
+#commentslist {
+    margin:0 auto;
+    width: 50%;
+    min-height:50px;
+    height: auto;
+}
+.comment {
+    border:1px solid #9B8174;
+    padding:5px 0 5px 5px;
+    color:#9B8174;
+}
+#leaveComment {
+    width: 65%;
+    margin:0 auto;
+    padding:5px 0 5px 5px;
+    overflow:hidden;
+    position:relative;
+    background-color:#9B8174;
+    background:url(../images/comments.png) transparent no-repeat;
+}
+.row input, .row textarea, .row div {
+    width:280px;
+    display:block;
+}

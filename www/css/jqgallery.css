@@ -1,0 +1,125 @@
+
+/* JQuery Gallery */
+/*
+/* styling for the image wrapper  */
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 800px;
+	height:130px;
+
+	/* custom decorations */
+	border:1px solid #9B8174;
+        margin-left: 8px;
+        background:url(../images/h300.png) repeat-x;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:800px;
+}
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background:url(../images/hori_large.png) no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin:40px 10px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* right */
+a.right 	{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover 	{ background-position:-30px -30px; }
+a.right:active 	{ background-position:-60px -30px; } 
+
+
+/* left */
+a.left		{ margin-left: 0px; } 
+a.left:hover  	{ background-position:-30px 0; }
+a.left:active  	{ background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down		{ 
+    background:url(../images/vert_large.png) no-repeat; 
+    float: none;
+    margin: 10px 50px;
+}
+
+/* up */
+a.up:hover  	{ background-position:-30px 0; }
+a.up:active  	{ background-position:-60px 0; }
+
+/* down */
+a.down 		{ background-position: 0 -30px; }
+a.down:hover  	{ background-position:-30px -30px; }
+a.down:active  	{ background-position:-60px -30px; } 
+
+/* disabled navigational button */
+a.disabled {
+    visibility:hidden !important;		
+} 	
+
+/* single scrollable item */
+.scrollable img {
+    float:left;
+    margin:20px 5px 20px 21px;
+    background-color:#fff;
+    padding:2px;
+    border:1px solid #9B8174;
+    width:125px;
+    height:85px;
+
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+#image_wrap {
+    /* dimensions */
+    width:800px;
+    margin:15px 0 15px 0;
+    padding:20px 0;
+
+    /* centered */
+    text-align:center;
+
+    /* some "skinning" */
+    border:1px solid #9B8174;
+    /* CSS3 tweaks for modern browsers */
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-box-shadow:0 0 25px #666;
+    -webkit-box-shadow:0 0 25px #666;	
+}
